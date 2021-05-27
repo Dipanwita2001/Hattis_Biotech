@@ -1,0 +1,228 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Jun, 2020, 12:28:01 PM
+    Author     : KIIT
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behaviour: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+}
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 13px;
+    transition: all 0.3s ease;
+    background: #f8f8f8;
+    border-color: #e7e7e7;
+}
+.navbar .max-width{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #777;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.navbar .menu li a:hover{
+   color: #111; 
+}
+/* menu btn styling */
+.menu-btn{
+    color: #111;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/*li{
+    font-size: 15px;
+}*/
+.bg{
+    padding-top: 65px;
+    padding-bottom: 5px;
+}
+#logo-sp{
+    padding-left: 96px;
+}
+
+.heading1{
+    font-family: "Algerian";
+    font-size-adjust: 0.5;
+    font-size: 45px;
+    color:red;
+}
+
+#logo{
+    width:64px;height:40px;object-fit:fill;
+}
+
+#name{
+    object-position: 50% 50%;
+     width:300px; height:55px;
+}
+
+.mySlides {display:none;}
+
+.text{
+    font-family: "baskervillemtw01-smbdit,serif";
+    font-size: 24px;
+    text-align: justify;
+}
+
+.text3{
+    font-family: "Comic Sans MS";
+    font-size: 22px;
+    text-align: justify;
+}
+.list{
+    font-size: 14px;
+}
+.text4{
+    font-size: 23px;
+}
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bg1{
+    background-color: sandybrown;
+        padding-top: 65px;
+    padding-bottom: 5px;
+}
+
+.bg2{
+    background-color: skyblue;
+}
+.bg3{
+    padding-top: 65px;
+    padding-bottom: 5px;
+}
+
+.box{
+    display: block;
+    background-color: pink;
+}
+.content{
+    max-width: 80%;
+    z-index: 1000;
+    background-color: white;
+    align-self: center;
+}
+
+.text5{
+    font-family: century schoolbook;
+    font-size: 42px;
+    color: #D93D00;
+    vertical-align: baseline;
+    line-height: normal;
+    letter-spacing: normal;
+    text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
+    }
+    /*.thumb{
+        cursor: pointer;
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }*/
+    .caption{
+        font-size: 14px;
+    }
+    .text6{
+        font-size: 19px;
+        text-align: justify
+    }
+    .text7{
+        font-family: "baskervillemtw01-smbdit,serif";
+    font-size: 15px;
+    text-align: justify;
+    color: chocolate;
+    }
+    .content1{
+    max-width: 80%;
+    z-index: 1000;
+    color: white;
+    font-size: 22px;
+    background-color: rgba(0,0,0,0.8);
+    align-self: center;
+    }
+    footer {
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    }
+    
+    .pro{
+        text-align: left;
+        font-size: 18px;
+        margin-left: 40px;
+    }
+@media (max-width: 1321px) {
+    .navbar .menu li a{
+        font-size: 15px;
+    }
+    }    
+@media (max-width: 1071px) {
+    .navbar .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #f8f8f8;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 25px;   
+    }
+}
+   
